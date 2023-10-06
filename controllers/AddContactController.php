@@ -9,9 +9,8 @@ class AddContactController {
     public function addContact($id,$nom, $prenom, $email, $telephone) {
        
         // Ajouter le contact dans la base de données
-        // $contact = new ContactModel($id,$nom, $prenom, $email, $telephone);
-
-        $this->contactDAO->addContact($contact);
+         $contact = new ContactModel($id,$nom, $prenom, $email, $telephone);
+        $this->contactDAO-> create($contact);
 
 
         }

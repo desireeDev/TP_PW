@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Liste des Contacts</h1>
-    <a href="ajouter_contact.php">Ajouter un contact</a>
+    <a href="add_contact.php">Ajouter un contact</a>
 
         <table>
             <thead>
@@ -27,9 +27,9 @@
                                                 <td><?php echo isset($prenom) ? $prenom : ''; ?></td>
                                                 <td><?php echo isset($email) ? $email : ''; ?></td>
                                                 <td>
-                                                    <a href="voir_contact.php?id=<?php echo isset($id) ? $id : ''; ?>">Voir</a>
-                                                    <a href="modifier_contact.php?id=<?php echo isset($id) ? $id : ''; ?>">Modifier</a>
-                                                    <a href="supprimer_contact.php?id=<?php echo isset($id) ? $id : ''; ?>">Supprimer</a>
+                                                    <a href="view_contact.php?id=<?php echo isset($id) ? $id : ''; ?>">Voir</a>
+                                                    <a href="edit_contact.php?id=<?php echo isset($id) ? $id : ''; ?>">Modifier</a>
+                                                    <a href="delete_contact.php?id=<?php echo isset($id) ? $id : ''; ?>">Supprimer</a>
                                                 </td>
                                             </tr>
                                     
